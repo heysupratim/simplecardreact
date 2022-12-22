@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <div className="card-container">
-        <Badge text='New Post' filled={true}/>
+        <Badge text='New Post' filled={false}/>
       </div>
     </div>
   )
