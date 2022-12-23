@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import Badge from './components/Badge'
 import Button from './components/Button'
+import {PaperAirplaneIcon} from '@heroicons/react/24/solid'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,7 +16,10 @@ function App() {
         <Button
           text='Button'
           href='#'
-          type='primary'/>
+          type='primary'
+          filled={true}
+          icon ={<PaperAirplaneIcon/>}
+          />
       </div>
     </div>
   )
