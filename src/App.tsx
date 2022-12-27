@@ -1,26 +1,31 @@
-import { useState } from 'react'
 import './App.css'
 import Badge from './components/Badge'
 import Button from './components/Button'
 import {PaperAirplaneIcon} from '@heroicons/react/24/solid'
+import Card from './components/Card'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <div className="App">
-      <div className="card-container">
-        <Badge 
-          text='New Post' 
-          filled={false}/>
-        <Button
-          text='Button'
-          href='#'
-          type='primary'
-          filled={true}
-          icon ={<PaperAirplaneIcon/>}
-          />
-      </div>
+      <section className="card-container">
+        <Card
+          title='Title' 
+          subtitle='Subtitle'
+          indicator='Indicator'
+          badge={{
+            text: 'Badge Text',
+            filled: false
+          }}
+          btn={{
+            href: '#',
+            type: 'primary',
+            text: 'Button',
+            filled: true,
+            icon: <PaperAirplaneIcon/>
+          }}
+          image='https://source.unsplash.com/random'
+          body= 'Body Message' />
+      </section>
     </div>
   )
 }

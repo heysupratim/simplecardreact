@@ -64,7 +64,7 @@ small {
     text-transform: uppercase;
 }
 
-.-stack-lg {
+.stack-lg {
     display: grid;
     gap: var(--space-lg);
 }
